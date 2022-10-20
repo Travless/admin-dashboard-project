@@ -11,52 +11,78 @@
 <body>
     <div class="total-container">
         <div class="sidebar">
-            <div class="dashboard-img">Image Placeholder</div>
-            <ul class="nav-options">
-                <div class="sidebar-link" id="home">Home</div>
-                <div class="sidebar-link" id="profile">Profile</div>
-                <div class="sidebar-link" id="messages">Messages</div>
-                <div class="sidebar-link" id="history">History</div>
-                <div class="sidebar-link" id="tasks">Tasks</div>
-                <div class="sidebar-link" id="communities">Communities</div>
-            </ul>
-            <ul class="settings-options">
-                <div class="sidebar-link" id="settings">Settings</div>
-                <div class="sidebar-link" id="support">Support</div>
-                <div class="sidebar-link" id="privacy">Privacy</div>
-            </ul>
+            <!-- <div class="dashboard-img">Image Placeholder</div> -->
+            <div class="dashboard-header">
+                <img id="dashboard-logo" src="/images/starfield.png" alt="">
+                <div class="dashboard-title-container">
+                    <div class="sub-header">Constellation Log</div>
+                    <div class="dashboard-title">Dashboard</div>
+                </div>
+            </div>
+            <div class="sidebar-contents">
+                <div class="navy"></div>
+                <div class="yellow"></div>
+                <div class="orange"></div>
+                <div class="red"></div>
+                <div class="sidebar-options">
+                    <ul class="nav-options">
+                        <img class="nav-bar-icon" id="nav-home-icon" src="/icons/sidebar/nav-bar-icons/home.svg" alt="">
+                        <div class="sidebar-link" id="home">Home</div>
+                        <img class="nav-bar-icon" id="nav-profile-icon" src="/icons/sidebar/nav-bar-icons/card-account-details-outline.svg" alt="">
+                        <div class="sidebar-link" id="profile">Profile</div>
+                        <img class="nav-bar-icon" id="nav-messages-icon" src="/icons/sidebar/nav-bar-icons/message-reply.svg" alt="">
+                        <div class="sidebar-link" id="messages">Messages</div>
+                        <img class="nav-bar-icon" id="nav-history-icon" src="/icons/sidebar/nav-bar-icons/history.svg" alt="">
+                        <div class="sidebar-link" id="history">History</div>
+                        <img class="nav-bar-icon" id="nav-tasks-icon" src="/icons/sidebar/nav-bar-icons/file-multiple.svg" alt="">
+                        <div class="sidebar-link" id="tasks">Tasks</div>
+                        <img class="nav-bar-icon" id="nav-communities-icon" src="/icons/sidebar/nav-bar-icons/account-group.svg" alt="">
+                        <div class="sidebar-link" id="communities">Communities</div>
+                    </ul>
+                    <ul class="settings-options">
+                        <img class="settings-bar-icon" id="settings-setting-icon" src="/icons/sidebar/settings-icons/cog.svg" alt="">
+                        <div class="sidebar-link" id="settings">Settings</div>
+                        <img class="settings-bar-icon" id="setting-support-icon" src="/icons/sidebar/settings-icons/help-box.svg" alt="">
+                        <div class="sidebar-link" id="support">Support</div>
+                        <img class="settings-bar-icon" id="settings-privacy-icon" src="/icons/sidebar/settings-icons/shield-check.svg" alt="">
+                        <div class="sidebar-link" id="privacy">Privacy</div>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="page-container">
             <div class="header">
                 <div class="search-container">
                     <div class="searchbar-container">
-                        <div class="mag-glass-icon">O</div>
-                        <div class="searchbar">Search Bar Placeholder</div>
+                        <img class="search-icon" id="search-icon" src="/icons/search-bar/magnify.svg" alt="">
+                        <input type="text" id="searchbar">
+                        <!-- <div class="mag-glass-icon">O</div> -->
+                        <!-- <div class="searchbar">Search Bar Placeholder</div> -->
                     </div>
                     <div class="acct-mini-top-right">
-                        <div class="noti-bell-icon">Bell</div>
-                        <div class="pfp-icon">PFP</div>
+                        <img class="search-icon" src="/icons/search-bar/bell.svg" alt="">
+                        <img class="pfp-icon" id="pfp-icon-trav" src="/images/starfield.png" alt="">
                         <div class="acct-name">Account Name</div>
                     </div>
                 </div>
                 <div class="intro-bar">
                     <div class="intro-container">
-                        <div class="pfp">PFP</div>
+                        <img class="pfp" id="pfp=full-trav" src="/images/starfield.png" alt="">
                         <div class="greeting-container">
                             <div class="greeting">Hi there,</div>
                             <div class="acct-name-full">Account Name (@username)</div>
                         </div>
                     </div>
                     <div class="action-buttons-container">
-                        <input type="button" name="new" id="new" value="New"/>
-                        <input type="button" name="upload" id="upload" value="Upload">
-                        <input type="button" name="share" id="share" value="Share">
+                        <input class="action-btn" type="button" name="new" id="new" value="New"/>
+                        <input class="action-btn" type="button" name="upload" id="upload" value="Upload">
+                        <input class="action-btn" type="button" name="share" id="share" value="Share">
                     </div>
                 </div>
             </div>
             <div class="elements-container">
                 <div class="projects">
-                    <div class="projects-header">Your Projeccts</div>
+                    <div class="projects-header">Your Projects</div>
                     <div class="projects-container">
                         <div class="card">
                             <div class="card-text">
@@ -70,24 +96,59 @@
                             </div>
                         </div>
                         <div class="card">
-                            <h2 class="card-title">Placeholder Title</h2>
-                            <p class="card-content">Placeholder text content</p>
+                            <div class="card-text">
+                                <h2 class="card-title">Placeholder Title</h2>
+                                <p class="card-content">Placeholder text content</p>
+                            </div>
+                            <div class="card-interaction">
+                                <div>Star</div>
+                                <div>Eye</div>
+                                <div>Share</div>
+                            </div>
                         </div>
                         <div class="card">
-                            <h2 class="card-title">Placeholder Title</h2>
-                            <p class="card-content">Placeholder text content</p>
+                            <div class="card-text">
+                                <h2 class="card-title">Placeholder Title</h2>
+                                <p class="card-content">Placeholder text content</p>
+                            </div>
+                            <div class="card-interaction">
+                                <div>Star</div>
+                                <div>Eye</div>
+                                <div>Share</div>
+                            </div>
                         </div>
                         <div class="card">
-                            <h2 class="card-title">Placeholder Title</h2>
-                            <p class="card-content">Placeholder text content</p>
+                            <div class="card-text">
+                                <h2 class="card-title">Placeholder Title</h2>
+                                <p class="card-content">Placeholder text content</p>
+                            </div>
+                            <div class="card-interaction">
+                                <div>Star</div>
+                                <div>Eye</div>
+                                <div>Share</div>
+                            </div>
                         </div>
                         <div class="card">
-                            <h2 class="card-title">Placeholder Title</h2>
-                            <p class="card-content">Placeholder text content</p>
+                            <div class="card-text">
+                                <h2 class="card-title">Placeholder Title</h2>
+                                <p class="card-content">Placeholder text content</p>
+                            </div>
+                            <div class="card-interaction">
+                                <div>Star</div>
+                                <div>Eye</div>
+                                <div>Share</div>
+                            </div>
                         </div>
                         <div class="card">
-                            <h2 class="card-title">Placeholder Title</h2>
-                            <p class="card-content">Placeholder text content</p>
+                            <div class="card-text">
+                                <h2 class="card-title">Placeholder Title</h2>
+                                <p class="card-content">Placeholder text content</p>
+                            </div>
+                            <div class="card-interaction">
+                                <div>Star</div>
+                                <div>Eye</div>
+                                <div>Share</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,8 +171,30 @@
                         </div>
                     </div>
                     <div class="trending">
-                        <div class="trending-header"></div>
-                        <div class="trending container"></div>
+                        <div class="trending-header">Trending</div>
+                        <div class="trending container">
+                            <div class="account-trending-container">
+                                <div class="pfp-icon">PFP</div>
+                                <div class="trending-account-name-container">
+                                    <div class="username">username</div>
+                                <div class="trending-project-name">Project Name</div>
+                                </div>
+                            </div>
+                            <div class="account-trending-container">
+                                <div class="pfp-icon">PFP</div>
+                                <div class="trending-account-name-container">
+                                    <div class="username">username</div>
+                                <div class="trending-project-name">Project Name</div>
+                                </div>
+                            </div>
+                            <div class="account-trending-container">
+                                <div class="pfp-icon">PFP</div>
+                                <div class="trending-account-name-container">
+                                    <div class="username">username</div>
+                                <div class="trending-project-name">Project Name</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
