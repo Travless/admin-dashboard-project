@@ -78,9 +78,9 @@
                         <!-- <div class="searchbar">Search Bar Placeholder</div> -->
                     </div>
                     <div class="acct-mini-top-right">
-                        <img class="search-icon" src="/icons/search-bar/bell.svg" alt="">
+                        <img class="search-icon" id="noti-bell-icon" src="/icons/search-bar/bell.svg" alt="">
                         <img class="pfp-icon" id="pfp-icon-trav" src="/images/starfield.png" alt="">
-                        <div class="acct-name">Account Name</div>
+                        <div class="acct-name" id="acct-name-mini">Travis W.</div>
                     </div>
                 </div>
                 <div class="intro-bar">
@@ -88,7 +88,7 @@
                         <img class="pfp" id="pfp=full-trav" src="/images/starfield.png" alt="">
                         <div class="greeting-container">
                             <div class="greeting">Hi there,</div>
-                            <div class="acct-name-full">Account Name (@username)</div>
+                            <div class="acct-name-full">Travis W. (@Travless)</div>
                         </div>
                     </div>
                     <div class="action-buttons-container">
@@ -108,9 +108,9 @@
                                 <p class="card-content">Placeholder text content</p>
                             </div>
                             <div class="card-interaction">
-                                <div>Star</div>
-                                <div>Eye</div>
-                                <div>Share</div>
+                                <img class="card-interact" src="/icons/card/star-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/eye-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/source-fork.png" alt="">
                             </div>
                         </div>
                         <div class="card">
@@ -119,9 +119,9 @@
                                 <p class="card-content">Placeholder text content</p>
                             </div>
                             <div class="card-interaction">
-                                <div>Star</div>
-                                <div>Eye</div>
-                                <div>Share</div>
+                                <img class="card-interact" src="/icons/card/star-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/eye-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/source-fork.png" alt="">
                             </div>
                         </div>
                         <div class="card">
@@ -130,9 +130,9 @@
                                 <p class="card-content">Placeholder text content</p>
                             </div>
                             <div class="card-interaction">
-                                <div>Star</div>
-                                <div>Eye</div>
-                                <div>Share</div>
+                                <img class="card-interact" src="/icons/card/star-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/eye-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/source-fork.png" alt="">
                             </div>
                         </div>
                         <div class="card">
@@ -141,9 +141,9 @@
                                 <p class="card-content">Placeholder text content</p>
                             </div>
                             <div class="card-interaction">
-                                <div>Star</div>
-                                <div>Eye</div>
-                                <div>Share</div>
+                                <img class="card-interact" src="/icons/card/star-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/eye-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/source-fork.png" alt="">
                             </div>
                         </div>
                         <div class="card">
@@ -152,9 +152,9 @@
                                 <p class="card-content">Placeholder text content</p>
                             </div>
                             <div class="card-interaction">
-                                <div>Star</div>
-                                <div>Eye</div>
-                                <div>Share</div>
+                                <img class="card-interact" src="/icons/card/star-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/eye-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/source-fork.png" alt="">
                             </div>
                         </div>
                         <div class="card">
@@ -163,9 +163,9 @@
                                 <p class="card-content">Placeholder text content</p>
                             </div>
                             <div class="card-interaction">
-                                <div>Star</div>
-                                <div>Eye</div>
-                                <div>Share</div>
+                                <img class="card-interact" src="/icons/card/star-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/eye-plus-outline.png" alt="">
+                                <img class="card-interact" src="/icons/card/source-fork.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -175,41 +175,45 @@
                         <div class="announcements-header">Announcements</div>
                         <div class="announcements-container">
                             <div class="announcement">
-                                <h6 class="announcement-title">Announcement Title</h6>
-                                <p class="announcement-content">Announcement Text</p>
+                                <a href="" class="announcement-title">Site Maintenance</a>
+                                <p class="announcement-content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
+                            <hr />
                             <div class="announcement">
-                                <h6 class="announcement-title">Announcement Title</h6>
-                                <p class="announcement-content">Announcement Text</p>
+                                <a href="" class="announcement-title">Community Share Day</a>
+                                <p class="announcement-content">Ut enim ad minim veniam, quis nostrud exercitation.</p>
                             </div>
+                            <hr />
                             <div class="announcement">
-                                <h6 class="announcement-title">Announcement Title</h6>
-                                <p class="announcement-content">Announcement Text</p>
+                                <a href="" class="announcement-title">Updated Privacy Policy</a>
+                                <p class="announcement-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
                             </div>
                         </div>
                     </div>
                     <div class="trending">
                         <div class="trending-header">Trending</div>
-                        <div class="trending container">
+                        <div class="trending-container">
                             <div class="account-trending-container">
-                                <div class="pfp-icon">PFP</div>
+                                <img class="pfp-icon" src="/images/fallout.png" alt="">
                                 <div class="trending-account-name-container">
-                                    <div class="username">username</div>
-                                <div class="trending-project-name">Project Name</div>
+                                    <a href="" class="trending-username">@VaultDweller111</a>
+                                    <div class="trending-project-name">Fueling Station Blueprint</div>
                                 </div>
                             </div>
+                            <hr />
                             <div class="account-trending-container">
-                                <div class="pfp-icon">PFP</div>
+                                <img class="pfp-icon" src="/images/skyrim.png" alt="">
                                 <div class="trending-account-name-container">
-                                    <div class="username">username</div>
-                                <div class="trending-project-name">Project Name</div>
+                                    <a href="" class="trending-username">@Arrow2Knee</a>
+                                    <div class="trending-project-name">Reformed Defensive Guide</div>
                                 </div>
                             </div>
+                            <hr />
                             <div class="account-trending-container">
-                                <div class="pfp-icon">PFP</div>
+                                <img class="pfp-icon" src="/images/pngegg.png" alt="">
                                 <div class="trending-account-name-container">
-                                    <div class="username">username</div>
-                                <div class="trending-project-name">Project Name</div>
+                                    <a href="" class="trending-username">@CapCollector</a>
+                                    <div class="trending-project-name">Improved Station Vending Facilities</div>
                                 </div>
                             </div>
                         </div>
