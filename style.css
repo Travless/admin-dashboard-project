@@ -5,17 +5,17 @@
 
 @font-face {
     font-family: 'starfield';
-    src: url(/fonts/Heading-Pro-Light-trial.ttf);
+    src: url(fonts/Heading-Pro-Light-trial.ttf);
 }
 
 @font-face {
     font-family: 'gobold';
-    src: url(/fonts/Gobold\ Light.otf);
+    src: url(fonts/Gobold\ Light.otf);
 }
 
 @font-face {
     font-family: 'bold-title';
-    src: url(/fonts/TS\ Block\ Bold.ttf);
+    src: url(fonts/TS\ Block\ Bold.ttf);
 }
 
 .total-container {
