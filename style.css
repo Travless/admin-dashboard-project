@@ -13,6 +13,11 @@
     src: url(/fonts/Gobold\ Light.otf);
 }
 
+@font-face {
+    font-family: 'bold-title';
+    src: url(/fonts/TS\ Block\ Bold.ttf);
+}
+
 .total-container {
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -65,7 +70,7 @@
 }
 
 #dashboard-logo {
-    width: 100px;
+    width: 70px;
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -80,16 +85,16 @@
 
 .dashboard-title {
     text-align: start;
-    font-size: 40px;
+    font-size: 1.5rem;
     color: white;
     border: 1px solid white;
     padding: 5px;
-    font-family: 'gobold';
+    font-family: 'bold-title';
 }
 
 .sub-header {
     font-family: 'starfield';
-    font-size: 20px;
+    font-size: 1rem;
     color: white;
     padding-left: 5px;
     align-self: center;
@@ -103,17 +108,22 @@
     row-gap: 20px;
     color: white;
     padding-bottom: 10px;
-    font-family: 'gobold';
+    font-family: 'bold-title';
 }
 .nav-link {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 10px;
+    align-items: center;
 }
 
 .nav-link:hover {
     color: #d7a64b;
     transition: 0.3s;
+}
+
+.sidebar-link {
+    font-size: 1.25rem;
 }
 
 .sidebar-link:link {
@@ -177,8 +187,10 @@
     width: 75%;
     height: 25px;
     border: 0;
-    background: lightgray;
+    background: white;
     border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .acct-mini-top-right {
@@ -210,6 +222,7 @@
 .pfp-icon:hover {
     filter: drop-shadow(1px 1px 5px black);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .intro-bar {
@@ -234,10 +247,12 @@
 
 .greeting {
     font-family: 'starfield';
+    font-size: 1rem;
 }
 
 .acct-name-full {
-    font-size: 30px;
+    /* font-size: 25px; */
+    font-size: 2rem;
     font-family: 'gobold';
 }
 
@@ -283,7 +298,7 @@
 
 .projects-header {
     align-self: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .projects-container {
@@ -294,7 +309,7 @@
 
 .projects-container .card {
     display: flex;
-    padding: 10px;
+    padding: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
     border-radius: 5px;
 }
@@ -302,6 +317,8 @@
 .card {
     display: flex;
     flex-direction: column;
+    position: relative;
+    background-color: white;
 }
 
 .card:hover {
@@ -310,25 +327,31 @@
 }
 
 .card-text {
-    display: grid;
+    /* display: grid;
     grid-template-rows: 1fr 2fr;
-    gap: 10px;
+    gap: 20px; */
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title {
     font-family: 'gobold';
+    padding: 10px;
 }
 
 .card-content {
     font-family: 'starfield';
+    padding: 10px 10px 30px 10px;
 }
 
 .card-interaction {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-top: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .card-interact {
@@ -344,6 +367,8 @@
 .updates-container {
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .announcements {
@@ -370,6 +395,7 @@ hr {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
+    background-color: white;
 }
 
 .announcement {
@@ -417,6 +443,7 @@ hr {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
+    background-color: white;
 }
 
 .account-trending-container {
@@ -433,4 +460,18 @@ hr {
 .announcements-header,
 .trending-header {
     font-family: 'gobold';
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #213150;
+    color: white;
+    text-align: center;
+    font-family: 'starfield';
+    padding-top: 30px;
 }
